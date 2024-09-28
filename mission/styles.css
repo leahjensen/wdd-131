@@ -5,12 +5,21 @@ body {
     padding: 0;
 }
 
+body {
+    background-color: white;
+    color: black;
+}
+
+body.dark {
+    background-color: #333;
+    color: white;
+    }
+
 header.title h2{
     color: #006EB6;
     border-bottom: 2px solid #1b1d1e;
     padding-bottom: 5px; 
     display: inline-block;
-
 }
 
 header.title, main, footer {
@@ -22,6 +31,11 @@ header.title h1 {
     letter-spacing: 2px;
     line-height: 1.5;
 }
+
+h2 {
+    color: #006EB6;
+}
+
 
 .content {
     max-width: 600px;
@@ -43,4 +57,8 @@ ol.does-list {
 footer img.logo {
     width: 150px;
     height: auto;
+}
+
+.logo {
+    width: 100px;
 }
