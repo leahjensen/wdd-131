@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+    --primary-color: #52489c;
+    --secondary-color: #59c3c3;
+    --accent-color: #202747;
+    --text-dark: #333;
+    --text-light: #ebebeb;
+    --primary-font: Arial, Helvetica, sans-serif;
+    --secondary-font: Mooli, sans-serif;
+}
+
+body {
+    font-family: 'Arvo', serif;
+    font-size: 1.2em; /* Base font size */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    background-color: #3498db;
+    color: #ffffff;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+}
+
+ul {
+    display: flex;
+    flex-direction: column; /* Change to column by default */
+    gap: 20px; /* Reduce gap for mobile */
+    list-style: none;
+}
+
+footer {
+    background-color: #2980b9;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+}
+
+a:link,
+a:visited {
+    color: var(--accent-color);
+}
+
+a {
+    color: #1e3848;
+}
+
+a:hover {
+    color: #1a5276;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    justify-items: center;
+    margin: 0 auto;
+}
+
+figure {
+    margin: 10px;
+}
+
+img {
+    max-width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover;
+}
+
+@media screen and (min-width: 700px) {
+    ul {
+        flex-direction: row; /* Change to row for larger screens */
+        justify-content: center;
+        gap: 20px; /* Adjust gap */
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .menu-button {
+        display: none; /* Hide menu button on larger screens */
+    }
+}
