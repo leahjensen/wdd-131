@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0f7fa; /* Light blue background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background-color: #ffffff; /* White background for the container */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.hangman {
+    margin: 20px 0;
+}
+
+#wordContainer {
+    font-size: 24px;
+    margin: 20px 0;
+    color: #00796b; /* Dark teal color */
+}
+
+#wrongLettersContainer {
+    margin: 20px 0;
+    color: red;
+}
+
+input {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #00796b; /* Dark teal border */
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #00796b; /* Dark teal background */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #004d40; /* Darker teal on hover */
+}
+
+#message {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #d32f2f; /* Red color for messages */
+}

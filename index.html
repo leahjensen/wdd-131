@@ -3,62 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cool Pics 📷</title>
-    <link rel="stylesheet" href="coolpics.css">
-    <script src="coolpics.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Hangman Game</title>
 </head>
 <body>
-
-    <header>
-        <h1>Cool Pics 📷</h1>
-        <nav>
-            <ul>
-                <li><a href="coolpics/index.html">Home</a></li>
-                <li><a href="coolpics/people.html">People</a></li>
-                <li><a href="coolpics/places.html">Places</a></li>
-                <li><a href="coolpics/about.html">About</a></li>
-                <li><a href="coolpics/contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <h2>Our Amazing Gallery</h2>
-
-        <section class="gallery">
-            <figure>
-                <img src="norris-sm.jpeg" alt="Picture 1">
-            </figure>
-            <figure>
-                <img src="norris-sm.jpeg" alt="Picture 2">
-            </figure>
-            <figure>
-                <img src="norris-sm.jpeg" alt="Picture 3">
-            </figure>
-            <figure>
-                <img src="norris-sm.jpeg" alt="Picture 4">
-            </figure>
-            <figure>
-                <img src="norris-sm.jpeg" alt="Picture 5">
-            </figure>
-            <figure>
-                <img src="norris-sm.jpeg" alt="Picture 6">
-            </figure>
-            <figure>
-                <img src="norris-sm.jpeg" alt="Picture 7">
-            </figure>
-            <figure>
-                <img src="norris-sm.jpeg" alt="Picture 8">
-            </figure>
-            <figure>
-                <img src="norris-sm.jpeg" alt="Picture 9">
-            </figure>
-        </section>
-    </main>
-
-    <footer>
-        <p>©2024 Not a real site 😀</p>
-    </footer>
-    
+    <div class="container">
+        <h1>Hangman Game</h1>
+        <div class="hangman">
+            <svg id="hangmanImage" width="200" height="200" viewBox="0 0 200 200">
+                <g id="hangmanParts">
+                    <line x1="20" y1="180" x2="180" y2="180" stroke="black" stroke-width="4"/>
+                    <line x1="40" y1="180" x2="40" y2="30" stroke="black" stroke-width="4"/>
+                    <line x1="40" y1="30" x2="120" y2="30" stroke="black" stroke-width="4"/>
+                    <line x1="120" y1="30" x2="120" y2="50" stroke="black" stroke-width="4"/>
+                    <circle id="head" cx="120" cy="60" r="10" stroke="black" stroke-width="4" fill="lightblue" style="display: none;"/>
+                    <line id="body" x1="120" y1="70" x2="120" y2="130" stroke="black" stroke-width="4" style="display: none;"/>
+                    <line id="leftArm" x1="120" y1="80" x2="100" y2="100" stroke="black" stroke-width="4" style="display: none;"/>
+                    <line id="rightArm" x1="120" y1="80" x2="140" y2="100" stroke="black" stroke-width="4" style="display: none;"/>
+                    <line id="leftLeg" x1="120" y1="130" x2="100" y2="150" stroke="black" stroke-width="4" style="display: none;"/>
+                    <line id="rightLeg" x1="120" y1="130" x2="140" y2="150" stroke="black" stroke-width="4" style="display: none;"/>
+                </g>
+            </svg>
+        </div>
+        <div id="wordContainer"></div>
+        <div id="wrongLettersContainer"></div>
+        <input type="text" id="letterInput" maxlength="1" placeholder="Enter a letter" />
+        <button id="guessButton">Guess</button>
+        <div id="message"></div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
