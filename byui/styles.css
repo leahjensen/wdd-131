@@ -1,0 +1,64 @@
+body {
+    font-size: 20px;
+    font-family: Times New Roman, serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: white;
+    color: black;
+}
+
+body.dark {
+    background-color: #333;
+    color: white;
+    }
+
+header.title h2{
+    color: #006EB6;
+    border-bottom: 2px solid #1b1d1e;
+    padding-bottom: 5px; 
+    display: inline-block;
+}
+
+header.title, main, footer {
+    text-align: center;
+}
+
+header.title h1 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 1.5;
+}
+
+h2 {
+    color: #006EB6;
+}
+
+
+.content {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+main p {
+    text-align: left;
+    line-height: 2;
+}
+
+ol.does-list {
+    text-align: left;
+    margin: 20px 0;
+    line-height: 2;
+}
+
+footer img.logo {
+    width: 150px;
+    height: auto;
+}
+
+.logo {
+    width: 100px;
+}
