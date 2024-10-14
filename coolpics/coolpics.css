@@ -29,6 +29,10 @@ h2 {
     text-align: center;
 }
 
+.hide {
+    display: none;
+}
+
 ul {
     display: flex;
     flex-direction: column;
@@ -74,7 +78,35 @@ img {
     object-fit: cover;
 }
 
-@media screen and (min-width: 700px) {
+.viewer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.75);
+    display: grid;
+    place-items: center;
+    z-index: 10;
+}
+
+#viewer-image {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.close-viewer {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2em;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 700px) {
     ul {
         flex-direction: row;
         justify-content: center;
@@ -82,12 +114,12 @@ img {
     }
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (max-width: 1000px) {
     .gallery {
         grid-template-columns: repeat(3, 1fr);
     }
 
     .menu-button {
-        display: none;
+        display: inline;
     }
 }
