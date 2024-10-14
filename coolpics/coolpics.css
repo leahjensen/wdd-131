@@ -18,6 +18,27 @@ body {
     padding: 0;
 }
 
+.menu-button {
+    background-color: var(--primary-color); /* Primary color for button */
+    color: var(--text-light); /* Light text color */
+    font-size: 1.2em; /* Slightly larger text */
+    padding: 10px 20px; /* Add padding for a better button shape */
+    border: none; /* Remove default borders */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Change cursor to pointer */
+    transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+.menu-button:hover {
+    background-color: var(--accent-color); /* Change color on hover */
+    color: var(--text-light);
+}
+
+
+.hide {
+    display: none;
+}
+
 header {
     text-align: center;
     background-color: #3498db;
@@ -25,13 +46,18 @@ header {
     padding: 20px;
 }
 
+.menu ul {
+    padding: 0; /* Remove default padding */
+    list-style: none; /* Remove bullet points */
+    display: flex; /* Use flexbox for the list */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+}
+
 h2 {
     text-align: center;
 }
 
-.hide {
-    display: none;
-}
 
 ul {
     display: flex;
