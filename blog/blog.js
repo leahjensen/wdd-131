@@ -42,6 +42,5 @@ articles.forEach((article) => {
       <p>${article.description}</p>
     </div>
   `;
-
   bookList.appendChild(bookCard);
 });
