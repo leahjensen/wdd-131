@@ -37,11 +37,9 @@ const articles = [
 const articleList = document.getElementById("article-list");
 
 articles.forEach((article) => {
-  // Create a new article container
   const articleContainer = document.createElement("div");
   articleContainer.classList.add("book-content");
 
-  // Template literal for article content
   const articleContent = `
     <aside class="sidebar">
       <span>${article.date}</span>
@@ -57,7 +55,6 @@ articles.forEach((article) => {
     </section>
   `;
 
-  // Set the inner HTML of the new article container
   articleContainer.innerHTML = articleContent;
 
   articleList.appendChild(articleContainer);
