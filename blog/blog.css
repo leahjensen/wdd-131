@@ -49,50 +49,27 @@ nav ul li a:hover {
 
 main {
     display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-columns: 3fr 1fr; /* Book content on the left, filter on the right */
     gap: 2rem;
     padding: 2rem;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-.sidebar {
+.book-content {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    padding-right: 1rem;
-    text-align: right;
-}
-
-.sidebar span {
-    display: block;
-    margin-bottom: 10px;
-    font-size: 0.9rem;
-    color: var(--text-dark);
-}
-
-.book-content {
-    border-bottom: 1px solid var(--primary-color);
-    padding-bottom: 2rem;
-    margin-bottom: 2rem;
-}
-
-.book-content h2 {
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
-}
-
-.book-content .placeholder {
-    background-color: #ccc;
+    align-items: center; /* Centers the content horizontally */
+    text-align: center;  /* Centers the text */
+    padding: 10px;
+    margin: 10px;
     width: 100%;
-    height: 250px;
-    display: block;
-    margin-bottom: 1rem;
+    max-width: 400px;
 }
 
-.book-content p {
-    font-size: 1rem;
-    line-height: 1.6;
+.book-content img {
+    max-width: 100%;
+    height: auto;
 }
 
 .book-content .read-more {
