@@ -1,73 +1,3 @@
-import recipes from './recipes.mjs';
-
-function random(num) {
-    return Math.floor(Math.random() * num);
-}
-
-function getRandomListEntry(list) {
-    return list[random(list.length)];
-}
-
-function recipeTemplate(recipe) {
-    return `<figure class="recipe">
-        <img src="${recipe.image}" alt="image of ${recipe.name}" />
-        <figcaption>
-            <ul class="recipe__tags">${tagsTemplate(recipe.tags)}</ul>
-            <h2><a href="#">${recipe.name}</a></h2>
-            <p class="recipe__ratings">${ratingTemplate(recipe.rating)}</p>
-            <p class="recipe__description">${recipe.description}</p>
-        </figcaption>
-    </figure>`;
-}
-
-function tagsTemplate(tags) {
-    return tags.map(tag => `<li>${tag}</li>`).join('');
-}
-
-function ratingTemplate(rating) {
-    let html = `<span class="rating" role="img" aria-label="Rating: ${rating} out of 5 stars">`;
-    for (let i = 1; i <= 5; i++) {
-        if (i <= rating) {
-            html += `<span aria-hidden="true" class="icon-star">⭐</span>`;
-        } else {
-            html += `<span aria-hidden="true" class="icon-star-empty">☆</span>`;
-        }
-    }
-    html += `</span>`;
-    return html;
-}
-
-function renderRecipes(recipeList) {
-    const outputElement = document.querySelector('#recipes'); // Assume #recipes is the container ID
-    outputElement.innerHTML = recipeList.map(recipe => recipeTemplate(recipe)).join('');
-}
-
-function init() {
-    const recipe = getRandomListEntry(recipes);
-    renderRecipes([recipe]);
-}
-
-init();
-
-function filterRecipes(query) {
-    return recipes
-        .filter(recipe =>
-            recipe.name.toLowerCase().includes(query) ||
-            recipe.description.toLowerCase().includes(query) ||
-            recipe.tags.find(tag => tag.toLowerCase().includes(query))
-        )
-        .sort((a, b) => a.name.localeCompare(b.name));
-}
-
-function searchHandler(e) {
-    e.preventDefault();
-    const query = document.querySelector('#search-input').value.toLowerCase(); // Assume #search-input is the input ID
-    const filteredRecipes = filterRecipes(query);
-    renderRecipes(filteredRecipes);
-}
-
-document.querySelector('#search-button').addEventListener('click', searchHandler); // Assume #search-button is the button ID
-
 export const recipes = [
     {
         author: 'Provo High Culinary Students',
@@ -97,8 +27,8 @@ export const recipes = [
         prepTime: '30 Min',
         recipeInstructions: [
             'Add the egg yolks, oil, salt, cayenne, sugar, ginger, shallots, sweet potatoes (steam and mash before), and milk and mix well.',
-            'Next add the cornmeal, chives, and flour and baking powder',
-            'Whip the egg whites until stiff and fold in',
+            'Next add the cornmeal, chives, and flour and baking powder.',
+            'Whip the egg whites until stiff and fold in.',
             'Cook until golden brown in a waffle iron. Serve with butter and Wilted Greens or Honey.'
         ],
         recipeYield: '6 waffles',
@@ -160,8 +90,8 @@ export const recipes = [
             'Preheat oven to 400 deg F',
             'Wash and thinly slice the potatoes (I usually slice the potato in half lengthwise, then thinly slice the halves, again lengthwise)',
             'Mix together the oil, salt, pepper, Italian seasoning, and hot sauce.',
-            'Toss the potatoes in the spice mixture to evenly coat then spead over a baking sheet',
-            'Bake for 30 min or until the desired level of crispyness is achieved.'
+            'Toss the potatoes in the spice mixture to evenly coat then spread over a baking sheet.',
+            'Bake for 30 min or until the desired level of crispiness is achieved.'
         ],
         recipeYield: '',
         rating: 4

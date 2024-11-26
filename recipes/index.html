@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Browse delicious recipes from side dishes to desserts, featuring easy-to-follow instructions and ratings.">
   <title>Recipe Book</title>
   <link rel="stylesheet" href="recipes.css">
-  <script src="main.js" type="module"></script>
-  <link rel="icon" href="favicon.ico" type="image/x-icon"> 
+  <script src="main.js" type="module" defer></script>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 
 <body>
@@ -20,102 +21,12 @@
 
   <div class="search-bar">
     <input type="text" id="search-input" placeholder="Search recipes..." aria-label="Search recipes">
-    
     <button id="search-button" aria-label="Search">
       <img src="search.svg" alt="Search Icon">
     </button>
   </div>
-  
+
   <div id="recipes"></div>
-  
-
-  <section class="recipe-card">
-    <img src="roasted-potatoes.webp" alt="Oven Roasted Potato Slices">
-    <div class="recipe-details">
-        <div class="tags">
-            <span>side dish</span>
-        </div>
-        <h2>Oven Roasted Potato Slices</h2>
-        <div class="rating" aria-label="4 out of 5 stars">
-            ★★★★☆
-        </div>
-        <p>Tossed in a savory spice mixture, these crispy potato slices are perfect for a quick and tasty snack.</p>
-    </div>
-  </section>
-
-  <section class="recipe-card">
-    <img src="black-beans-and-rice.jpg" alt="Black Beans and Rice">
-    <div class="recipe-details">
-        <div class="tags">
-            <span>Southwest</span>
-            <span>entree</span>
-        </div>
-        <h2>Black Beans and Rice</h2>
-        <div class="rating" aria-label="3 out of 5 stars">
-            ★★★☆☆
-        </div>
-        <p>Black beans and tomatoes served over a bed of rice. Top with cheese and scoop up with tortilla chips for maximum enjoyment.</p>
-    </div>
-  </section>
-
-  <section class="recipe-card">
-    <img src="chicken-curry.webp" alt="Chicken Curry">
-    <div class="recipe-details">
-        <div class="tags">
-            <span>chicken</span>
-            <span>entree</span>
-            <span>Indian</span>
-        </div>
-        <h2>Chicken Curry</h2>
-        <div class="rating" aria-label="5 out of 5 stars">
-            ★★★★★
-        </div>
-        <p>Quick and easy chicken curry recipe made with easy-to-find ingredients.</p>
-    </div>
-  </section>
-
-  <section class="recipe-card">
-    <img src="chocolate-chip-cookies.jpg" alt="Chocolate Chip Cookies">
-    <div class="recipe-details">
-        <div class="tags">
-            <span>dessert</span>
-        </div>
-        <h2>Chocolate Chip Cookies</h2>
-        <div class="rating" aria-label="5 out of 5 stars">
-            ★★★★★
-        </div>
-        <p>Delicious soft chocolate chip cookies with coconut for a unique twist.</p>
-    </div>
-  </section>
-
-  <section class="recipe-card">
-    <img src="german-gooseberry-cake.jpg" alt="German Gooseberry Cake">
-    <div class="recipe-details">
-        <div class="tags">
-            <span>dessert</span>
-            <span>German</span>
-        </div>
-        <h2>Gooseberry Cake with Vanilla Cream and Crumble</h2>
-        <div class="rating" aria-label="5 out of 5 stars">
-            ★★★★★
-        </div>
-        <p>This gooseberry cake combines a tart filling with a sweet crumble topping for the perfect dessert.</p>
-    </div>
-  </section>
-
-  <section class="recipe-card">
-    <img src="apple-crisp.jpg" alt="Apple Crisp">
-    <div class="recipe-details">
-        <div class="tags">
-            <span>dessert</span>
-        </div>
-        <h2>Apple Crisp</h2>
-        <div class="rating" aria-label="4 out of 5 stars">
-            ★★★★☆
-        </div>
-        <p>This apple crisp recipe is a simple yet delicious fall dessert that's great served warm with vanilla ice cream.</p>
-    </div>
-  </section>
 
   <footer>
     <p>Recipe icons created by Freepik - Flaticon</p>
@@ -126,4 +37,5 @@
     </div>
   </footer>
 </body>
+
 </html>
