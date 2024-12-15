@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <title>Leah's Life</title>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img src="leah-logo.png" alt="Leah's Logo" class="logo">
+            <h1>Leah's Life</h1>
+            <nav class="menu hide" id="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="hobbies.html">Hobbies</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h2>About Me</h2>
+        <div class="image-container">
+            <p class="intro-paragraph">
+                Welcome to my creative corner! I’m 19 years old and a junior at BYU-Idaho, majoring in Web Design and 
+                Development. I grew up in Kingwood, a cozy suburb just outside of Houston, Texas. My journey into web development 
+                began with a passion for creating visually appealing and functional websites. Over time, I’ve developed skills in HTML, 
+                CSS, and JavaScript, building projects that blend creativity with user-friendly design. I’m excited to keep learning and 
+                creating engaging digital experiences.
+            </p>
+        </div>
+
+        <div class="image-container">
+            <p class="second-paragraph">
+                I have a variety of hobbies that bring me joy. I love thrifting and discovering one-of-a-kind clothes or trinkets 
+                that have their own unique story. Hanging out with friends and going on adventures is another favorite pastime; whether 
+                it’s exploring new places or trying fun activities, I enjoy creating memories with the people I care about. I also love 
+                playing video games, with Minecraft, Fortnite, The Sims, and Hogwarts Legacy being some of my top picks. Baking is 
+                another passion of mine. I find joy in creating delicious treats from scratch. On quieter days, I love putting on a movie 
+                and building LEGO sets.
+            </p>
+        </div>
+
+        <div class="image-container">
+            <p class="projects">
+                Here are some of my favorite projects that I'm proud of. These include a recipe project, a hangman game, and a credit card 
+                input. Each project demonstrates my ability to design, code, and bring ideas to life using HTML, CSS, and JavaScript. I’ll 
+                also include examples of interactive elements, like menu toggles and JavaScript-powered features, to show how I make websites 
+                functional and user-friendly.
+            </p>
+        </div>
+
+        <p>
+            <a href="https://leahjensen.github.io/wdd-131/" target="_blank">Here's the hangman game!</a>
+            <a href="https://leahjensen.github.io/wdd-131/recipes/index.html" target="_blank">Here's a recipe book!</a>
+            <a href="https://leahjensen.github.io/wdd-131/creditcard/index.html" target="_blank">Here's a credit card inputer!</a>
+        </p>
+
+        <div>
+            <button id="clickButton">Click me for a surprise!</button>
+        </div>
+
+        <div class="slideshow">
+            <img src="me.jpeg" alt="pic of Leah" class="slide">
+            <img src="sem.jpg" alt="Slide 2" class="slide">
+            <img src="car.JPG" alt="Slide 3" class="slide">                   
+            <button onclick="prevSlide()">Previous</button>
+            <button onclick="nextSlide()">Next</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>©2024 Not a real site 😀</p>
+    </footer>
+
+    <script src="site.js" defer></script>
+</body>
+</html>

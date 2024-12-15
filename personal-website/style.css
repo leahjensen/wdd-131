@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato");
+
+:root {
+  --primary-color: #646536;
+  --secondary-color: #9ABD97;
+  --accent1-color: #392A16;
+  --accent2-color: #D0F1BF;
+
+  --heading-font: "IM Fell French Canon SC";
+  --paragraph-font: Lato, Helvetica, sans-serif;
+
+  --headline-color-on-white: var(--primary-color);
+  --headline-color-on-color: white;
+  --paragraph-color-on-white: var(--primary-color);
+  --paragraph-color-on-color: white;
+  --paragraph-background-color: var(--primary-color);
+  --nav-link-color: var(--primary-color);
+  --nav-background-color: var(--secondary-color);
+  --nav-hover-link-color: white;
+  --nav-hover-background-color: var(--primary-color);
+}
+
+body {
+  font-family: 'Arvo', serif;
+  font-size: 1.2em;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  text-align: center;
+  background-color: #9ABD97;
+  color: #392A16;
+  padding: 20px;
+}
+
+h2 {
+  text-align: center;
+  color: #392A16;
+}
+
+p {
+  color: #392A16;
+}
+
+.intro-paragraph,
+.second-paragraph,
+.projects {
+  font-size: 1.2em;
+  color: #392A16;
+}
+
+ul {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  gap: 20px;
+  list-style: none;
+}
+
+.logo {
+  height: 85px;
+  width: 85px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 15px;
+  margin-top: 15px;
+  border-radius: 40px;
+}
+
+main {
+  background-color: #646536;
+  flex: 1;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+a {
+  display: block;
+  color: #392A16;
+  font-size: 1.2em;
+}
+
+#clickButton {
+  background-color: #392A16;
+  color: #D0F1BF;
+  padding: 5px 15px;
+  font-size: 0.9em;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+  width: auto;
+}
+
+.computer,
+.senior {
+  width: 300px;
+  height: 420px;
+  object-fit: cover;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+.intro-paragraph {
+  display: flex;
+}
+
+.slideshow-container {
+  width: 400px;
+  height: 520px;
+  margin-right: 500px;
+  margin-left: 500px;
+}
+
+.slideshow {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slide {
+  display: none;
+  width: 100%;
+}
+
+.slide:first-child {
+  display: block;
+}
+
+.content-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.text-content {
+  flex: 1;
+  max-width: 60%;
+}
+
+#slideshow {
+  max-width: 500px;
+  height: auto;
+}
+
+button {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 20px;
+  color: #D0F1BF;
+  background-color: #392A16;
+  font-weight: bold;
+}
+
+button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #392A16;
+  color: #9ABD97;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  z-index: 10;
+}
+
+button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+button:first-of-type {
+  left: 10px;
+}
+
+button:last-of-type {
+  right: 10px;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  background-color: #9ABD97;
+  color: #392A16;
+  text-align: center;
+  padding: 10px;
+}
